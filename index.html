@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Bangladesh</title>
+    <!-- Tailwand css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy Ui Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Link -->
+    <!-- Raw Css -->
+    <style>
+      .lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="lexend">
+    <header class="fixed top-0 left-0 w-full bg-white">
+      <section class="header_nav bg-[#f7efe1] py-4">
+        <div
+          class="flex justify-between items-center w-11/12 lg:w-10/12 m-auto"
+        >
+          <div class="">
+            <button
+              class="btn w-16 lg:w-28 border-none hover:bg-lime-500 bg-lime-400 text-sm lg:text-xl font-bold"
+            >
+              Blog
+            </button>
+          </div>
+          <div class="flex gap-2 items-center">
+            <img
+              src="./assets/logo.png"
+              class="w-1/6 h-auto"
+              alt="Money Logo"
+            />
+            <a class="text-sm md:text-2xl font-bold">Save Bangladesh</a>
+          </div>
+          <div class="">
+            <div class="primary_money flex gap-1">
+              <img src="./assets/coin.png" alt="Coin Logo" />
+              <span id="primary_money" class="font-bold text-xl">10000</span>
+              <span class="font-bold text-xl">BDT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="nav-bottom-section flex justify-center gap-4 pt-12 pb-6">
+        <button
+          class="btn w-36 border-none focus:bg-lime-400 text-xl font-bold"
+        >
+          Donation
+        </button>
+        <button
+          class="btn w-36 border-none focus:bg-lime-400 text-xl font-bold"
+        >
+          History
+        </button>
+      </section>
+    </header>
+
+
+    <main class="flex flex-col gap-8 pt-[14rem] mb-12">
+      <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
+        <div
+          class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
+        >
+          <img
+            src="./assets/noakhali.png"
+            class="h-96 w-full lg:w-8/12 rounded-lg shadow-2xl"
+          />
+          <div class="flex flex-col gap-2 w-11/12">
+            <button class="btn self-start border-none text-xl font-bold">
+              <span><img src="./assets/coin.png" alt="" /></span
+              ><span id="self-total-donate">00</span> <span>BDT</span>
+            </button>
+            <h1 class="text-2xl lg:text-3xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h1>
+            <p class="py-2">
+              Severe flooding has devastated Noakhali, Bangladesh, leaving
+              thousands homeless and in dire need of assistance. Families have
+              lost everything, from their homes to essential resources. As
+              floodwaters rise, the need for emergency aid, food, clean water,
+              and medical supplies is critical. Your generous donation can make
+              a difference, providing immediate relief to those affected. Every
+              contribution helps to restore hope and rebuild lives. Please
+              donate today and help the people of Noakhali in their time of
+              need. Together, we can bring comfort and support to those who are
+              suffering.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="border-2 p-3 rounded-lg mb-2"
+              id="noakhali-donate-input"
+            />
+            <button
+            id="noakhali-donate-btn"
+              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xl font-bold w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
+        <div
+          class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
+        >
+          <img
+            src="./assets/feni.png"
+            class="h-96 w-full lg:w-8/12 rounded-lg shadow-2xl"
+          />
+          <div class="flex flex-col gap-2 w-11/12">
+            <button class="btn self-start border-none text-xl font-bold">
+              <span><img src="./assets/coin.png" alt="" /></span
+              ><span id="self-total-donate">00</span> <span>BDT</span>
+            </button>
+            <h1 class="text-2xl lg:text-3xl font-bold">
+              Donate for Flood Relief in Feni,Bangladesh
+            </h1>
+            <p class="py-2">
+              Feni, Bangladesh, is facing severe flooding, affecting thousands
+              of families who have lost their homes, crops, and livelihoods.
+              Immediate help is needed to provide essential supplies like food,
+              clean water, medicine, and shelter. Many are struggling to access
+              basic necessities, and the situation is dire as the water levels
+              continue to rise. Your donation can make a difference. By
+              contributing to flood relief efforts, you can help ensure that
+              families in Feni receive the emergency aid they need to survive
+              and rebuild their lives. Every contribution, no matter the size,
+              can provide a meal, clean drinking water, or temporary shelter for
+              those in need. Let’s come together to support the people of Feni
+              in their time of crisis. Your generosity can bring hope and relief
+              to those most affected. Donate now and make an impact.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="border-2 p-3 rounded-lg mb-2"
+            />
+            <button
+              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xl font-bold w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
+        <div
+          class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
+        >
+          <img
+            src="./assets/quota-protest.png"
+            class="h-96 w-full lg:w-8/12 rounded-lg shadow-2xl"
+          />
+          <div class="flex flex-col gap-2 w-11/12">
+            <button class="btn self-start border-none text-xl font-bold">
+              <span><img src="./assets/coin.png" alt="" /></span
+              ><span id="self-total-donate">00</span> <span>BDT</span>
+            </button>
+            <h1 class="text-2xl lg:text-3xl font-bold">
+              Donate for Flood at Noakhali, Bangladesh
+            </h1>
+            <p class="py-2">
+              Severe flooding has devastated Noakhali, Bangladesh, leaving
+              thousands homeless and in dire need of assistance. Families have
+              lost everything, from their homes to essential resources. As
+              floodwaters rise, the need for emergency aid, food, clean water,
+              and medical supplies is critical. Your generous donation can make
+              a difference, providing immediate relief to those affected. Every
+              contribution helps to restore hope and rebuild lives. Please
+              donate today and help the people of Noakhali in their time of
+              need. Together, we can bring comfort and support to those who are
+              suffering.
+            </p>
+            <input
+              type="text"
+              placeholder="Write Donation Amount"
+              class="border-2 p-3 rounded-lg mb-2"
+            />
+            <button
+              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xl font-bold w-full"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Js File Link -->
+    <script src="./js/blog.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
