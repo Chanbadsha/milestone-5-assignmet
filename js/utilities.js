@@ -1,6 +1,7 @@
 function getTextfieldValueById(id){
    const textValue = document.getElementById(id).innerText;
     const textNumber = parseFloat(textValue)
+    console.log(typeof textNumber);
     return textNumber
 }
 function getInputfieldValueById(id){
@@ -9,6 +10,3 @@ function getInputfieldValueById(id){
     return inputNumber
 }
 
-document.getElementById("noakhali-donate-btn").addEventListener("click", function(){
-    console.log(getInputfieldValueById("noakhali-donate-input"));
-});
