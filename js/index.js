@@ -21,6 +21,8 @@ document
       document.getElementById("noakhali-total-donate").innerText =
         newIndividualBalance;
 
+      showHistory("noakhali-donate-input", "noa");
+
       /**
        * ! Modal section
        */
@@ -61,6 +63,7 @@ document
       document.getElementById("feni-total-donate").innerText =
         newIndividualBalance;
 
+      showHistory("feni-donate-input", "feni");
       /**
        * ! Modal section
        */
@@ -100,7 +103,9 @@ document
       const newIndividualBalance = individualBalance + inputBalance;
       document.getElementById("quota-total-donate").innerText =
         newIndividualBalance;
-
+      // fundNames();
+      // history("qouta-donate-input");
+      showHistory("qouta-donate-input", "qouta");
       /**
        * ! Modal section
        */
@@ -115,10 +120,3 @@ document
     }
     document.getElementById("qouta-donate-input").value = "";
   });
-
-
-
-
-
-
- 

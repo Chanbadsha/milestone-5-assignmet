@@ -1,7 +1,7 @@
 function getTextfieldValueById(id) {
   const textValue = document.getElementById(id).innerText;
   const textNumber = parseFloat(textValue);
-  console.log(typeof textNumber);
+
   return textNumber;
 }
 function getInputfieldValueById(id) {
@@ -18,9 +18,21 @@ function makeBtnactive(id) {
   donationBtn.classList.remove("bg-lime-400");
   designBtn.classList.add("bg-lime-400");
 }
-document.getElementById("donation-id").addEventListener("click", function () {
-  makeBtnactive("donation-id");
-});
-document.getElementById("history-id").addEventListener("click", function () {
-  makeBtnactive("history-id");
-});
+document
+  .getElementById("history-id")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    makeBtnactive("history-id");
+    document.getElementById("donation-section").classList.add("hidden");
+    document.getElementById("history-section").classList.remove("hidden");
+  });
+
+document
+  .getElementById("donation-id")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    makeBtnactive("donation-id");
+    document.getElementById("donation-section").classList.remove("hidden");
+    document.getElementById("history-section").classList.add("hidden");
+  });
+

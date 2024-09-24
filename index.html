@@ -48,18 +48,22 @@
               class="w-1/6 h-auto"
               alt="Money Logo"
             />
-            <a class="text-sm md:text-2xl  font-bold">Save Bangladesh</a>
+            <a class="text-sm md:text-2xl font-bold">Save Bangladesh</a>
           </div>
           <div class="">
             <div class="primary_money justify-center items-center flex gap-1">
               <img src="./assets/coin.png" alt="Coin Logo" />
-              <span id="primary_money" class="font-bold text-sm md:text-2xl">10000</span>
+              <span id="primary_money" class="font-bold text-sm md:text-2xl"
+                >9000</span
+              >
               <span class="font-bold text-sm md:text-2xl">BDT</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="nav-bottom-section flex justify-center gap-4 pt-12 pb-6">
+      <section
+        class="nav-bottom-section flex justify-center gap-4 pt-6 md:pt-12 pb-3 md:pb-6"
+      >
         <button
           id="donation-id"
           class="btn bg-lime-400 hover:bg-lime-500 w-36 border-none text-base md:text-xl font-bold"
@@ -75,235 +79,267 @@
       </section>
     </header>
 
-    <main id="main_id" class="flex flex-col gap-8 pt-[14rem] mb-12">
-      <!-- Section One Start -->
-      <div class="hero h-auto w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2"
-      >
+    <main
+      id="main_id"
+      class=""
+    >
+    <!-- Donation Section Start -->
+      <section id="donation-section" class="flex flex-col gap-8 pt-[11rem] md:pt-[14rem] mb-12">
+        <!-- Section One Start -->
         <div
-          class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          class="hero h-auto w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2"
         >
-          <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
-            <img
-              src="./assets/noakhali.png"
-              class="w-full h-full rounded-lg shadow-2xl"
-            />
-          </div>
-          <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
-            <button class=" text-xs md:text-base btn self-start border-none text-xl font-bold">
-              <span><img src="./assets/coin.png" alt="" /></span
-              ><span id="noakhali-total-donate">00</span> <span>BDT</span>
-            </button>
-            <h1 id="noa" class="md:text-2xl lg:text-3xl font-bold">
-              Donate for Flood at Noakhali, Bangladesh
-            </h1>
-            <p class="py-2 text-sm xl:text-base">
-              Severe flooding has devastated Noakhali, Bangladesh, leaving
-              thousands homeless and in dire need of assistance. Families have
-              lost everything, from their homes to essential resources. As
-              floodwaters rise, the need for emergency aid, food, clean water,
-              and medical supplies is critical. Your generous donation can make
-              a difference, providing immediate relief to those affected. Every
-              contribution helps to restore hope and rebuild lives. Please
-              donate today and help the people of Noakhali in their time of
-              need. Together, we can bring comfort and support to those who are
-              suffering. Severe flooding has devastated Noakhali, Bangladesh,
-              leaving thousands homeless and in dire need of assistance.
-              Families have lost everything, from their homes to essential
-              resources. As floodwaters rise, the need for emergency aid, food,
-              clean water, and medical supplies is critical. Your generous
-              donation can make a difference, providing immediate relief to
-              those affected. Every contribution helps to restore hope and
-              rebuild lives. Please donate today and help the people of Noakhali
-              in their time of need. Together, we can bring comfort and support
-              to those who are suffering.Your generosity can make a profound
-              difference in the lives of those facing adversity. With every
-              donation, we can provide essential resources such as food,
-              shelter, and medical care. Join us in this vital mission to uplift
-              the community of Noakhali and show that compassion knows no
-              boundaries. Your support is a beacon of hope for many—let's stand
-              together and make a lasting impact
-            </p>
-            <input
-              type="text"
-              placeholder="Write Donation Amount"
-              class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
-              id="noakhali-donate-input"
-              autocomplete="off"
-            />
-            <button
-              id="noakhali-donate-btn"
-              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
-              onclick=""
-            >
-              Donate Now
-            </button>
-            <!-- Modal html start -->
-            <dialog id="my_modal_1" class="modal">
-              <div class="modal-box">
-                <h3 class="text-4xl font-bold text-center">Thank You!</h3>
-                <div class="flex justify-center mt-3">
-                  <img src="./assets/coin.png" alt="" />
+          <div
+            class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          >
+            <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
+              <img
+                src="./assets/noakhali.png"
+                class="w-full h-full rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
+              <button
+                class="text-xs md:text-base btn self-start border-none text-xl font-bold"
+              >
+                <span><img src="./assets/coin.png" alt="" /></span
+                ><span id="noakhali-total-donate">00</span> <span>BDT</span>
+              </button>
+              <h1 id="noa" class="md:text-2xl lg:text-3xl font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h1>
+              <p class="py-2 text-sm xl:text-base">
+                Severe flooding has devastated Noakhali, Bangladesh, leaving
+                thousands homeless and in dire need of assistance. Families have
+                lost everything, from their homes to essential resources. As
+                floodwaters rise, the need for emergency aid, food, clean water,
+                and medical supplies is critical. Your generous donation can
+                make a difference, providing immediate relief to those affected.
+                Every contribution helps to restore hope and rebuild lives.
+                Please donate today and help the people of Noakhali in their
+                time of need. Together, we can bring comfort and support to
+                those who are suffering. Severe flooding has devastated
+                Noakhali, Bangladesh, leaving thousands homeless and in dire
+                need of assistance. Families have lost everything, from their
+                homes to essential resources. As floodwaters rise, the need for
+                emergency aid, food, clean water, and medical supplies is
+                critical. Your generous donation can make a difference,
+                providing immediate relief to those affected. Every contribution
+                helps to restore hope and rebuild lives. Please donate today and
+                help the people of Noakhali in their time of need. Together, we
+                can bring comfort and support to those who are suffering.Your
+                generosity can make a profound difference in the lives of those
+                facing adversity. With every donation, we can provide essential
+                resources such as food, shelter, and medical care. Join us in
+                this vital mission to uplift the community of Noakhali and show
+                that compassion knows no boundaries. Your support is a beacon of
+                hope for many—let's stand together and make a lasting impact
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
+                id="noakhali-donate-input"
+                autocomplete="off"
+              />
+              <button
+                id="noakhali-donate-btn"
+                class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
+                onclick=""
+              >
+                Donate Now
+              </button>
+              <!-- Modal html start -->
+              <dialog id="my_modal_1" class="modal">
+                <div class="modal-box">
+                  <h3 class="text-4xl font-bold text-center">Thank You!</h3>
+                  <div class="flex justify-center mt-3">
+                    <img src="./assets/coin.png" alt="" />
+                  </div>
+                  <p id="modalInput" class="py-4 text-center"></p>
+
+                  <div class="modal-action justify-center">
+                    <form method="dialog">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn text-center items-center">
+                        Close Information
+                      </button>
+                    </form>
+                  </div>
                 </div>
-                <p id="modalInput" class="py-4 text-center"></p>
-
-                <div class="modal-action justify-center">
-                  <form method="dialog">
-                    <!-- if there is a button in form, it will close the modal -->
-                    <button class="btn text-center items-center">
-                      Close Information
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </dialog>
-            <!-- Modal html end -->
+              </dialog>
+              <!-- Modal html end -->
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Section One End -->
+        <!-- Section One End -->
 
-      <!-- Section Two Start -->
-      <div class="hero w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2">
+        <!-- Section Two Start -->
         <div
-          class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          class="hero w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2"
         >
-          <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
-            <img
-              src="./assets/feni.png"
-              class="w-full h-full rounded-lg shadow-2xl"
-            />
-          </div>
-          <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
-            <button class="btn text-xs md:text-base  self-start border-none text-xl font-bold">
-              <span><img src="./assets/coin.png" alt="" /></span
-              ><span id="feni-total-donate">00</span> <span>BDT</span>
-            </button>
-            <h1 id="feni" class="md:text-2xl lg:text-3xl font-bold">
-              Donate for Flood Relief in Feni,Bangladesh
-            </h1>
-            <p class="py-2 text-sm xl:text-base">
-              Feni, Bangladesh, is facing severe flooding, affecting thousands
-              of families who have lost their homes, crops, and livelihoods.
-              Immediate help is needed to provide essential supplies like food,
-              clean water, medicine, and shelter. Many are struggling to access
-              basic necessities, and the situation is dire as the water levels
-              continue to rise. Your donation can make a difference. By
-              contributing to flood relief efforts, you can help ensure that
-              families in Feni receive the emergency aid they need to survive
-              and rebuild their lives. Every contribution, no matter the size,
-              can provide a meal, clean drinking water, or temporary shelter for
-              those in need. Let’s come together to support the people of Feni
-              in their time of crisis. Your generosity can bring hope and relief
-              to those most affected. Donate now and make an impact.Together, we
-              can provide the necessary resources to help families regain their
-              footing. As we stand in solidarity with the people of Feni, let us
-              remember that each act of kindness contributes to a brighter
-              future. Your support not only offers immediate relief but also
-              helps to foster resilience in the community, allowing them to
-              rebuild and thrive in the aftermath of this disaster. Together, we
-              can provide the necessary resources to help families regain their
-              footing. As we stand in solidarity with the people of Feni, let us
-              remember that each act of kindness contributes to a brighter
-              future. Your support not only offers immediate relief but also
-              helps to foster resilience in the community, allowing them to
-              rebuild and thrive in the aftermath of this disaster. Every
-              donation counts and amplifies the collective strength of our
-              compassion. Join us in this urgent call to action—your generosity
-              today can sow the seeds of hope for tomorrow. Let’s unite to turn
-              despair into determination and help Feni rise again."
-            </p>
-            <input
-              type="text"
-              placeholder="Write Donation Amount"
-              class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
-              id="feni-donate-input"
-              autocomplete="off"
-            />
-            <button
-              id="feni-donate-btn"
-              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
-            >
-              Donate Now
-            </button>
+          <div
+            class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          >
+            <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
+              <img
+                src="./assets/feni.png"
+                class="w-full h-full rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
+              <button
+                class="btn text-xs md:text-base self-start border-none text-xl font-bold"
+              >
+                <span><img src="./assets/coin.png" alt="" /></span
+                ><span id="feni-total-donate">00</span> <span>BDT</span>
+              </button>
+              <h1 id="feni" class="md:text-2xl lg:text-3xl font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h1>
+              <p class="py-2 text-sm xl:text-base">
+                Feni, Bangladesh, is facing severe flooding, affecting thousands
+                of families who have lost their homes, crops, and livelihoods.
+                Immediate help is needed to provide essential supplies like
+                food, clean water, medicine, and shelter. Many are struggling to
+                access basic necessities, and the situation is dire as the water
+                levels continue to rise. Your donation can make a difference. By
+                contributing to flood relief efforts, you can help ensure that
+                families in Feni receive the emergency aid they need to survive
+                and rebuild their lives. Every contribution, no matter the size,
+                can provide a meal, clean drinking water, or temporary shelter
+                for those in need. Let’s come together to support the people of
+                Feni in their time of crisis. Your generosity can bring hope and
+                relief to those most affected. Donate now and make an
+                impact.Together, we can provide the necessary resources to help
+                families regain their footing. As we stand in solidarity with
+                the people of Feni, let us remember that each act of kindness
+                contributes to a brighter future. Your support not only offers
+                immediate relief but also helps to foster resilience in the
+                community, allowing them to rebuild and thrive in the aftermath
+                of this disaster. Together, we can provide the necessary
+                resources to help families regain their footing. As we stand in
+                solidarity with the people of Feni, let us remember that each
+                act of kindness contributes to a brighter future. Your support
+                not only offers immediate relief but also helps to foster
+                resilience in the community, allowing them to rebuild and thrive
+                in the aftermath of this disaster. Every donation counts and
+                amplifies the collective strength of our compassion. Join us in
+                this urgent call to action—your generosity today can sow the
+                seeds of hope for tomorrow. Let’s unite to turn despair into
+                determination and help Feni rise again."
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
+                id="feni-donate-input"
+                autocomplete="off"
+              />
+              <button
+                id="feni-donate-btn"
+                class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
+              >
+                Donate Now
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Section Two End -->
-      <!-- Section Three Start -->
-      <div class="hero w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2">
+        <!-- Section Two End -->
+        <!-- Section Three Start -->
         <div
-          class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          class="hero w-11/12 lg:w-10/12 m-auto border-gray-200 rounded-lg border-2"
         >
-          <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
-            <img
-              src="./assets/quota-protest.png"
-              class="w-full h-full rounded-lg shadow-2xl"
-            />
-          </div>
-          <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
-            <button class="btn text-xs md:text-base  self-start border-none text-xl font-bold">
-              <span><img src="./assets/coin.png" alt="" /></span
-              ><span id="quota-total-donate">00</span> <span>BDT</span>
-            </button>
-            <h1 id="qouta" class="md:text-2xl lg:text-3xl font-bold">
-              Aid for Injured in the Quota Movement
-            </h1>
-            <p class="py-2 text-sm xl:text-base">
-              The Quota Movement, a protest demanding reforms in Bangladesh’s
-              public service recruitment, has seen many injured during clashes
-              between students and law enforcement. In response, several
-              organizations and volunteer groups have come forward to provide
-              medical aid to the injured protesters. These groups, primarily
-              comprised of students and civil society members, are working
-              tirelessly to ensure timely treatment for those wounded in the
-              protests.The ongoing Quota Movement not only emphasizes the
-              pressing need for reform but also shines a light on the
-              determination of the youth in Bangladesh to advocate for their
-              rights. Amidst the chaos, the injured protesters symbolize the
-              courage and resolve of a generation seeking justice and equality
-              in public service recruitment. As the medical aid efforts
-              continue, it is essential for the wider community to rally in
-              support of these activists. This is a moment to amplify their
-              voices and acknowledge their struggles. Engaging in peaceful
-              dialogue and understanding the demands of the movement can foster
-              a more supportive environment for all.We urge everyone to
-              voices and acknowledge their struggles. Engaging in peaceful
-              dialogue and understanding the demands of the movement can foster
-              a more supportive environment for all.We urge everyone to
-              voices and acknowledge their struggles. Engaging in peaceful
-              dialogue and understanding the demands of the movement can foster
-              a more supportive environment for all.We urge everyone to
-              contribute in any way possible, whether through donations, sharing
-              information, or simply standing in solidarity with those who are
-              fighting for a fair and just system. The road to change may be
-              long, but together we can pave the way for a brighter future where
-              everyone has equal opportunities in public service. Let us not
-              forget the sacrifices made by these individuals and work together
-              to ensure that their efforts lead to meaningful reform."
-            </p>
-            <input
-              type="text"
-              placeholder="Write Donation Amount"
-              class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
-              id="qouta-donate-input"
-              autocomplete="off"
-            />
-            <button
-              id="qouta-donate-btn"
-              class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
-            >
-              Donate Now
-            </button>
+          <div
+            class="lg:p-8 p-2 gap-8 flex flex-col h-full lg:flex-row justify-between items-start"
+          >
+            <div class="2xl:w-1/3 lg:w-1/2 w-full h-full">
+              <img
+                src="./assets/quota-protest.png"
+                class="w-full h-full rounded-lg shadow-2xl"
+              />
+            </div>
+            <div class="flex flex-col gap-2 w-full lg:w-1/2 2xl:w-2/3">
+              <button
+                class="btn text-xs md:text-base self-start border-none text-xl font-bold"
+              >
+                <span><img src="./assets/coin.png" alt="" /></span
+                ><span id="quota-total-donate">00</span> <span>BDT</span>
+              </button>
+              <h1 id="qouta" class="md:text-2xl lg:text-3xl font-bold">
+                Aid for Injured in the Quota Movement
+              </h1>
+              <p class="py-2 text-sm xl:text-base">
+                The Quota Movement, a protest demanding reforms in Bangladesh’s
+                public service recruitment, has seen many injured during clashes
+                between students and law enforcement. In response, several
+                organizations and volunteer groups have come forward to provide
+                medical aid to the injured protesters. These groups, primarily
+                comprised of students and civil society members, are working
+                tirelessly to ensure timely treatment for those wounded in the
+                protests.The ongoing Quota Movement not only emphasizes the
+                pressing need for reform but also shines a light on the
+                determination of the youth in Bangladesh to advocate for their
+                rights. Amidst the chaos, the injured protesters symbolize the
+                courage and resolve of a generation seeking justice and equality
+                in public service recruitment. As the medical aid efforts
+                continue, it is essential for the wider community to rally in
+                support of these activists. This is a moment to amplify their
+                voices and acknowledge their struggles. Engaging in peaceful
+                dialogue and understanding the demands of the movement can
+                foster a more supportive environment for all.We urge everyone to
+                voices and acknowledge their struggles. Engaging in peaceful
+                dialogue and understanding the demands of the movement can
+                foster a more supportive environment for all.We urge everyone to
+                voices and acknowledge their struggles. Engaging in peaceful
+                dialogue and understanding the demands of the movement can
+                foster a more supportive environment for all.We urge everyone to
+                contribute in any way possible, whether through donations,
+                sharing information, or simply standing in solidarity with those
+                who are fighting for a fair and just system. The road to change
+                may be long, but together we can pave the way for a brighter
+                future where everyone has equal opportunities in public service.
+                Let us not forget the sacrifices made by these individuals and
+                work together to ensure that their efforts lead to meaningful
+                reform."
+              </p>
+              <input
+                type="text"
+                placeholder="Write Donation Amount"
+                class="border-2 p-3 rounded-lg mb-2 placeholder:text-xs md:placeholder:text-sm"
+                id="qouta-donate-input"
+                autocomplete="off"
+              />
+              <button
+                id="qouta-donate-btn"
+                class="btn border-none hover:bg-lime-500 bg-lime-400 text-xs md:text-xl font-bold w-full"
+              >
+                Donate Now
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Section Three End -->
+        <!-- Section Three End -->
+      </section>
+<!-- Donation Section End -->
+
+      <!-- History section start -->
+      <section id="history-section" class="flex hidden flex-col gap-3">
+        <div id="show-history" class="history-section  flex flex-col lg:text-start gap-12   p-3 h-auto w-11/12 lg:w-10/12 m-auto ">
+    
+
+
+     </div>
+     
+      </section>
+     
     </main>
 
     <!-- Js File Link -->
-    <script src="./js/blog.js"></script>
+
     <script src="./js/utilities.js"></script>
     <script src="./js/index.js"></script>
+        <script src="./js/history.js"></script>
   </body>
 </html>
