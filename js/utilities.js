@@ -36,3 +36,10 @@ document
     document.getElementById("history-section").classList.add("hidden");
   });
 
+
+document.getElementById("blog-btn").addEventListener("click", function () {
+  window.location.href = "./blog.html";
+});
+
+
+

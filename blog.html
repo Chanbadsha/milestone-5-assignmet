@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Save Bangladesh</title>
+    <!-- Tailwand css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Daisy Ui Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Raw Css -->
+    <style>
+      .lexend {
+        font-family: "Lexend", sans-serif;
+      }
+    </style>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="lexend">
+    <header class="fixed top-0 left-0 w-full bg-white z-10">
+      <section class="header_nav bg-[#f7efe1] py-4">
+        <div
+          class="flex justify-between items-center w-11/12 lg:w-10/12 m-auto"
+        >
+          <div class="">
+            <button
+            id="home-btn"
+              class="btn w-16 lg:w-28 border-none hover:bg-lime-500 bg-lime-400 text-sm lg:text-xl font-bold"
+            >
+              Home
+            </button>
+          </div>
+          <div class="flex ml-3 gap-2 items-center">
+            <img
+              src="./assets/logo.png"
+              class="w-1/6 h-auto"
+              alt="Money Logo"
+            />
+            <a class="text-sm md:text-2xl font-bold">Save Bangladesh</a>
+          </div>
+          <div class="">
+            <div class="primary_money justify-center items-center flex gap-1">
+              <img src="./assets/coin.png" alt="Coin Logo" />
+              <span id="primary_money" class="font-bold text-sm md:text-2xl"
+                >9000</span
+              >
+              <span class="font-bold text-sm md:text-2xl">BDT</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    </header>
+
+    <main class="flex flex-col gap-8 pt-[6rem] md:pt-[8rem] mb-12 w-11/12 lg:w-10/12 m-auto z-0">
+
+    <h2 class="font-bold text-2xl lg:text-5xl">Important FAQ <span ><i class="fa-solid fa-circle-question rotate-45"></i></span></h2>
+<div class="collapse collapse-plus border-2 bg-base-200">
+    
+  <input type="radio" name="my-accordion-3" checked="checked" />
+  <div class="collapse-title text-xl font-medium">What is a closure in JavaScript?</div>
+  <div class="collapse-content">
+    <p>A closure is a feature in JavaScript where an inner function has access to variables from its outer (enclosing) function, even after the outer function has returned. This allows the inner function to remember and continue to access the scope in which it was created.</p>
+  </div>
+</div>
+
+<div class="collapse collapse-plus border-2 bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title text-xl font-medium">What is the purpose of async and await in JavaScript?</div>
+  <div class="collapse-content">
+    <p>async and await are used to work with promises in a more readable, synchronous-like manner. The async keyword makes a function return a promise, and await pauses the execution of the function until the promise is resolved or rejected, allowing for asynchronous code to be written in a way that looks synchronous.</p>
+  </div>
+</div>
+
+<div class="collapse collapse-plus border-2 bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title text-xl font-medium">How does event propagation work in JavaScript?</div>
+  <div class="collapse-content">
+    <p>Event propagation refers to the way events flow through the DOM in three phases: the capturing phase (from the root to the target element), the target phase (when the event reaches the target element), and the bubbling phase (from the target element back up to the root). This allows event listeners to be set either during capturing or bubbling.</p>
+  </div>
+</div>
+
+<div class="collapse collapse-plus border-2 bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title text-xl font-medium">What is hoisting in JavaScript?</div>
+  <div class="collapse-content">
+    <p>Hoisting is JavaScript's default behavior of moving variable and function declarations to the top of their containing scope before code execution. This means that variables and functions can be used before they are declared, although the value of variables declared with var will be undefined until assigned.</p>
+  </div>
+</div>
+
+<div class="collapse collapse-plus border-2 bg-base-200">
+  <input type="radio" name="my-accordion-3" />
+  <div class="collapse-title text-xl font-medium">What are JavaScript arrow functions and how are they different from regular functions?</div>
+  <div class="collapse-content">
+    <p>Arrow functions are a concise syntax for writing functions in JavaScript. Unlike regular functions, they do not have their own this, arguments, or new.target bindings, making them more suited for scenarios where functions need to inherit the this value from their surrounding context. They are often used in callback functions and functional programming.</p>
+  </div>
+</div>
+</main>
+<script>
+    document.getElementById("home-btn").addEventListener("click", function () {
+  window.location.href = "./index.html";
+});
+</script>
+        <!-- Js File Link -->
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+        <script src="./js/history.js"></script>
+</body>
+</html>
