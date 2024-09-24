@@ -76,6 +76,7 @@
     </header>
 
     <main id="main_id" class="flex flex-col gap-8 pt-[14rem] mb-12">
+      <!-- Section One Start -->
       <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
         <div
           class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
@@ -89,7 +90,7 @@
               <span><img src="./assets/coin.png" alt="" /></span
               ><span id="noakhali-total-donate">00</span> <span>BDT</span>
             </button>
-            <h1 class="text-2xl lg:text-3xl font-bold">
+            <h1 id="noa" class="text-2xl lg:text-3xl font-bold">
               Donate for Flood at Noakhali, Bangladesh
             </h1>
             <p class="py-2">
@@ -114,13 +115,35 @@
             <button
               id="noakhali-donate-btn"
               class="btn border-none hover:bg-lime-500 bg-lime-400 text-xl font-bold w-full"
+              onclick=""
             >
               Donate Now
             </button>
+            <!-- Modal html start -->
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+                <h3 class="text-4xl font-bold text-center">Thank You!</h3>
+                <div class="flex justify-center mt-3">
+                  <img src="./assets/coin.png" alt="" />
+                </div>
+                <p id="modalInput" class="py-4 text-center"></p>
+
+                <div class="modal-action justify-center">
+                  <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn text-center items-center ">Close Information</button>
+                  </form>
+                </div>
+              </div>
+            </dialog>
+            <!-- Modal html end -->
           </div>
         </div>
       </div>
 
+      <!-- Section One End -->
+
+      <!-- Section Two Start -->
       <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
         <div
           class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
@@ -134,7 +157,7 @@
               <span><img src="./assets/coin.png" alt="" /></span
               ><span id="feni-total-donate">00</span> <span>BDT</span>
             </button>
-            <h1 class="text-2xl lg:text-3xl font-bold">
+            <h1 id="feni" class="text-2xl lg:text-3xl font-bold">
               Donate for Flood Relief in Feni,Bangladesh
             </h1>
             <p class="py-2">
@@ -168,7 +191,8 @@
           </div>
         </div>
       </div>
-
+      <!-- Section Two End -->
+      <!-- Section Three Start -->
       <div class="hero w-10/12 m-auto border-gray-200 rounded-lg border-2">
         <div
           class="p-8 gap-8 flex flex-col lg:flex-row justify-between items-start"
@@ -182,7 +206,7 @@
               <span><img src="./assets/coin.png" alt="" /></span
               ><span id="quota-total-donate">00</span> <span>BDT</span>
             </button>
-            <h1 class="text-2xl lg:text-3xl font-bold">
+            <h1 id="qouta" class="text-2xl lg:text-3xl font-bold">
               Aid for Injured in the Quota Movement
             </h1>
             <p class="py-2">
@@ -208,9 +232,11 @@
             >
               Donate Now
             </button>
+            
           </div>
         </div>
       </div>
+      <!-- Section Three End -->
     </main>
 
     <!-- Js File Link -->
