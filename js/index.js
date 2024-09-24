@@ -115,3 +115,10 @@ document
     }
     document.getElementById("qouta-donate-input").value = "";
   });
+
+
+
+
+
+
+ 
